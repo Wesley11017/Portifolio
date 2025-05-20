@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: azure;
+    color: #2d2d3a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho do perfil */
+.cabecalho-perfil {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.imagem-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff9800;
+}
+
+.saudacao-perfil {
+    color: #ff9800;
+    font-weight: 600;
+    margin: 16px 0 0 0;
+}
+
+.titulo-perfil {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0 10px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #2d3a4a;
+    letter-spacing: -1px;
+}
+
+.descricao-perfil {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #6c6c80;
+    font-size: 1.1rem;
+}
+
+.secao-habilidades {
+    margin-top: 20px;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.habilidade {
+    border: 2px solid #ff9800;
+    color: #ff9800;
+    border-radius: 8px;
+    padding: 4px 16px;
+    font-weight: 600;
+    background: #fff;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.habilidade:hover {
+    background: #ff9800;
+    color: #222;
+}
+
+.secao-projetos {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 0 16px;
+}
+
+.secao-projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.cartao-projeto {
+    background: #fff;
+    border: 2px solid #ff9800;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.05);
+    width: 320px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.cartao-projeto:hover {
+    border: 2px solid #ff9800;
+    box-shadow: 0 4px 16px rgba(255, 152, 0, 0.15);
+}
+
+.cartao-projeto img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.cartao-projeto h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px 0;
+}
+
+.cartao-projeto p {
+    color: #6c6c80;
+    font-size: 0.98rem;
+    margin-bottom: 12px;
+}
+
+.link-projeto {
+    color: #ff9800;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid #ff9800;
+    transition: color 0.2s;
+}
+
+.link-projeto:hover {
+    color: #e65100;
+    border-bottom: 1px solid #e65100;
+}
+
+.secao-contato {
+    max-width: 1100px;
+    margin: 60px auto 40px auto;
+    padding: 0 16px;
+}
+
+.secao-contato h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.link-contato {
+    color: #ff9800;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.link-contato:hover {
+    color: #e65100;
+}
+
+.detalhe-projeto-main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: azure;
+    padding: 32px 24px;
+}
+
+@media (max-width: 900px) {
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartao-projeto {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-perfil {
+        font-size: 1.5rem;
+    }
+    .secao-projetos h2, .secao-contato h2 {
+        font-size: 1.2rem;
+    }
+    .cartao-projeto {
+        padding: 10px;
+    }
+    .cabecalho-perfil {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .detalhe-projeto-main {
+        padding: 16px 4px;
+        margin: 10px auto;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 800;
+    color: #2d3a4a;
+    letter-spacing: -1px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin: 24px 0 0 24px;
+    padding: 8px 18px;
+    background: #ff9800;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s;
+}
+.botao-voltar:hover {
+    background: #e65100;
+    color: #fff;
+} 
